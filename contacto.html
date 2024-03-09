@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css">
+    <title>Contacto</title>
+</head>
+<body id = page>
+    
+    <header id="welcome">
+        <a href="index.html" id = "image_hipervinculo">
+            <img src="img/codebyte.jpeg" alt="Logo CodeByte">
+        </a>
+        <div class="title-container">
+            <h1>Contáctanos</h1>
+            <div class="text-spaces">
+                
+                <p><a href="nosotros.html">Nosotros</a></p>
+                <p><a href="proyecto.html">Saber más </a></p>
+                <p><a href="contacto.html">Contáctanos</a></p>
+            </div>
+        </div>
+    </header>
+
+    <section id="contact-form" class="opinion-form">
+        <h2>¡Danos tu opinión!</h2>
+        <p>Nos encantaría saber qué opinas de nuestra web.</p>
+    </section>
+    
+    <section class="main-section">
+        <section class="table-section">
+            <table>
+                <tr>
+                    <td><label for="name">Nombre:</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="name" name="name" placeholder="Tu nombre" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Correo Electrónico:</label></td>
+                </tr>
+                <tr>
+                    <td><input type="email" id="email" name="email" placeholder="Tu correo electrónico" required></td>
+                </tr>
+                <tr>
+                    <td><label for="opinion">Tu opinión:</label></td>
+                </tr>
+                <tr>
+                    <td><textarea id="opinion" name="opinion" rows="6" style="width: 300px;" placeholder="Escribe tu opinión aquí" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="rating">Puntúanos de 1 a 5</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="rating" name="rating" required>
+                            <option value="">Seleccione una puntuación</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit">Enviar</button></td>
+                </tr>
+            </table>
+        </section>
+        <section class="design-principles">
+            <h2>Los principios de diseño que hemos aplicado al diseñar el form son:</h2>
+            <ul>
+                <li><strong>Primer principio:</strong> explicación</li>
+                <li><strong>Segundo principio:</strong> explicación</li>
+                <li><strong>Tercer principio:</strong> explicación</li>
+            </ul>
+        </section>
+    </section>
+
+    <footer>
+    <p>&copy; 2024 CodeByte</p>
+    </footer>
+</body>
+</html>
