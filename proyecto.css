@@ -81,12 +81,17 @@ html, body {
 #image_hipervinculo{
     margin-bottom: 100px;
 }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Para ocupar todo el alto de la ventana del navegador */
+}
 
-.container section {
-    padding: 40px;
-    background-color: #f9f9f9;
-    margin-bottom: 20px;
-    flex: 1;
+#en_construccion {
+    height: 800px;
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+    max-height: 100%; /* Asegura que la imagen no se desborde del contenedor */
 }
 
 
