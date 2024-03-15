@@ -70,75 +70,61 @@
     }
 }
 
-
-.cuerpo{
+.hero-section{
     background: url(img/fondo.jpg) no-repeat center;
-    background-size:cover;
+    background-size: cover;
     width: 100%;
-    height: 120%;
-     
+    height: 100vh;
+    margin-top: 100;
+}
+
+.hero-section::before{
+    
+    content: "";
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
 }
 
 .container{
-    margin-top: 100px;
+    max-width: 1000px;
 }
 
-.first_col{
-    background-color: white;
-    height:550px;
-    position: relative;
-    width: 550px;
-    left:155px;
-    top:171px;
+.container p{
+    text-align: justify;
+}
+.carousel-inner{
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.diapo{
+    height: 600px;
+    width: 1000px;
+    background: radial-gradient(circle at top left, transparent 340px, rgba(170, 39, 202, 0.582)), 
+    radial-gradient(circle at bottom right, transparent 340px, rgba(61, 5, 52, 0.582));
     border-radius: 20px;
 }
 
-.img-fluid{
+.inner-img1{
+    max-width:450px;
+    margin-left: 90px;
     border-radius: 20px;
+    max-height: 250px;
+    object-fit: cover;
 }
 
-.last_row{
-    width: 60%;
-    position: relative;
-    left:350px;
-    top:50px;
-    height: 200px;
-    padding-bottom: 100px;
-    background-color: black;
-    border-radius: 20px;
+.titulo,.container p, .container h2,.subtitulo{
+    color:white
 }
 
 .btn-primary{
-    background-color: hsl(298, 98%, 24%);
-    border:hsl(298, 98%, 24%);
+    background-color: rgb(98, 15, 175);
+    border-color: rgb(98, 15, 175);
 }
 
-.btn_primary:hover{
+.btn-secondary{
     background-color: black;
-}
-
-.form-control{
-    height:52px;
-    background-color: white;
-    font-size: 14px;
-    border-radius: 2px;
-    box-shadow: none;
-    border:1px solide #555;
-}
-
-.form-control[type=text]:focus{
-    border:2px solid #555;
-}
-
-@media only screen and (max-width:600px) {
-    .first_col{
-        position: initial;
-        left:0;
-    }
-    .last_row{
-        left:0 !important;
-        width: 100% !important;
-        height: 480px !important;
-        top: 0 !important;
-    }
+    border-color: black;
 }
